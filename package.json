@@ -8,6 +8,8 @@
     "start": "next start",
     "prettier": "prettier \"**/*.+(json|ts|tsx)\"",
     "format:fix": "npm run prettier -- --write",
+    "format:check": "npm run prettier -- --check",
+    "types:check": "tsc --noEmit --pretty",
     "lint": "eslint --ext .ts,.tsx ./src ",
     "lint:fix": "eslint --ext .ts,.tsx ./src --fix",
     "storybook": "storybook dev -p 6006",
